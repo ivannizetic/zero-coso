@@ -29,27 +29,29 @@ function App() {
 
   return (
     <div className="App">
-      <input
-        className="ranger-input"
-        type="text"
-        value={inputColor}
-        onChange={handleInputChange} />
+      <div className="main-container">
+        <input
+          className="ranger-input"
+          type="text"
+          value={inputColor}
+          onChange={handleInputChange} />
 
-      <button className="ranger-button red" onClick={handleCreateRanger}>
-        Create Ranger
+        <button className="ranger-button red" onClick={handleCreateRanger}>
+          Create Ranger
       </button>
-      <button className="ranger-button" onClick={getAllRangers}>
-        Refresh Rangers
+        <button className="ranger-button" onClick={getAllRangers}>
+          Refresh Rangers
       </button>
-      <div className="rangers-container">
-        {rangers &&
-          rangers.map((ranger, i) => {
-            return (
-              <pre>
-                {JSON.stringify(ranger, undefined, 2)}
-              </pre>
-            );
-          })}
+        <div className="rangers-container">
+          {rangers &&
+            rangers.map((ranger, i) => {
+              return (
+                <pre>
+                  {JSON.stringify(ranger, undefined, 2)}
+                </pre>
+              );
+            })}
+        </div>
       </div>
     </div>
   );
