@@ -6,3 +6,21 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.ranger-button {
+  height: 50px;
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+.rangers-container {
+  display: flex;
+  direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ranger {
+  background-color: blue;
+  color: white;
+}
