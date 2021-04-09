@@ -16,7 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "releaseApiProd": "firebase deploy --only functions"
+    "releaseApiProd": "firebase deploy --only functions",
+    "releaseWeb":"yarn build && firebase deploy --only hosting"
   },
   "eslintConfig": {
     "extends": [

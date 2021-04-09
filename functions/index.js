@@ -26,9 +26,9 @@ app.get("/rangers", async (req, res) => {
   }
 });
 
-app.get("/rangers/:color", async (req, res) => {
+app.post("/rangers", async (req, res) => {
   try {
-    const { color } = req.params;
+    const { color } = req.body;
     const rangersRef = db.collection("rangers").doc();
 
     await rangersRef.set({
